@@ -1,7 +1,5 @@
 # AI-Based Learning Platform – One-Pager
 
-# **📄 AI-Based Learning Platform – One-Pager**
-
 ## **🔍 Problem**
 
 Students and educators are overwhelmed by the volume and complexity of academic content. Traditional learning tools are not personalized, slow to adapt, and often fail to provide real-time support or context-specific answers. As AI becomes integral in productivity tools (e.g., Cursor for developers), education still lacks domain-specific AI that can act as a real-time academic assistant.
