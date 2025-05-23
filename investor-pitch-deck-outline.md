@@ -18,6 +18,8 @@
 - 3 bullet points: too much curriculum, no personalisation, teachers overloaded
 - Image: a student collapses in front of a plethora of PDFs
 
+![Student overwhelmed by PDFs](/pics/pdf-student.png)
+
 ---
 
 ## **💡 3. Slide**
