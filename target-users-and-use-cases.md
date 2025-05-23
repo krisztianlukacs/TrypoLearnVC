@@ -1,7 +1,5 @@
 # Target Users and Use Cases
 
-# **👥 Target Users & Use Cases**
-
 ## **🎓 1. University Students**
 
 **Primary pain points**:

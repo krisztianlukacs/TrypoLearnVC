@@ -1,7 +1,5 @@
 # Product & Tech Stack
 
-# **🧪 Product & Tech Stack**
-
 ## **🧰 1. Product Overview (MVP)**
 
 The current MVP is a web-based AI learning assistant that allows users to:

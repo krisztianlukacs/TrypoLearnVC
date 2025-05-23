@@ -1,7 +1,5 @@
 # Problem & Solution Fit
 
-# **🎯 Problem & Solution Fit**
-
 ## **❌ The Problem**
 
 1. **Overwhelming Information Overload**

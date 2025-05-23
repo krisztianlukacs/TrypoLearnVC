@@ -1,7 +1,5 @@
 # Team
 
-# **👥 Team**
-
 ## **👨‍💻 Founder – Krisztian Lukacs**
 
 - **Serial AI & EdTech entrepreneur** with previous VC-backed projects
