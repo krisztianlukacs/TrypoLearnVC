@@ -19,6 +19,8 @@
 
 ![Mindmap of the workflow](/pics/trypolearn_mindmap_highres.png)
 
+[Highly detailed mindmap of the workflow](/pics/trypolearn_mindmap_highres.png)
+
 ## Planned Features for the Future
 
 - Exam practice generator
