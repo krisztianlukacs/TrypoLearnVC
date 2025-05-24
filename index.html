@@ -1,67 +1,441 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
-    <link rel="stylesheet" href="style.css">
+    <title>TrypoLearn - AI-based Learning Platform</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary: #4361ee;    /* Primary blue */
+            --secondary: #3a0ca3;  /* Deep purple */
+            --accent: #4cc9f0;     /* Light blue */
+            --success: #4caf50;    /* Green */
+            --warning: #ff9e00;    /* Orange */
+            --light: #f8f9fa;      /* Light background */
+            --dark: #212529;       /* Dark text */
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark);
+            background-color: #f8f9fa;
+        }
+        
+        .navbar {
+            background-color: var(--primary);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: white !important;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 4rem 0;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        
+        .section-title {
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+        
+        .benefit-card {
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--primary);
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .idea-card {
+            height: 100%;
+            border-left: 4px solid var(--warning);
+        }
+        
+        .doc-link {
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 500;
+        }
+        
+        .doc-link:hover {
+            color: var(--secondary);
+            text-decoration: underline;
+        }
+        
+        .doc-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .doc-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .social-icons a {
+            color: white;
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            color: var(--accent);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            border-color: var(--secondary);
+        }
+    </style>
 </head>
-<p>This is the TrypoLearn AI based learning platform investment documentation. </p>
-<p>You can see the beautiful and modern AI-generated website if you do not like plain text information here: <a href="https://trypolearn.com">https://trypolearn.com</a></p>
 <body>
-    <header>
-        <h1>Welcome to TrypoLearn</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Benefits of training an AI on university learning materials for students:</h2>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-brain me-2"></i>TrypoLearn
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#benefits">Benefits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ideas">Ideas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#docs">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+                <a href="https://trypolearn.com" class="btn btn-light ms-3">Visit Website</a>
+            </div>
+        </div>
+    </nav>
 
-            <ul>
-                <li><strong>Personalized Learning:</strong>The AI can adapt to individual student learning styles and needs, providing tailored content and pace.</li>
-                <li><strong>24/7 Availability:</strong>Students can access the AI anytime, anywhere, for questions, clarification, or further learning.</li>
-                <li><strong>Consistent and Reliable Information:</strong>The AI will provide accurate information based solely on the university's approved materials, reducing the risk of misinformation.</li>
-                <li><strong>Efficient Learning:</strong>The AI can quickly process and analyze information, helping students find answers and learn more efficiently.</li>
-                <li><strong>Enhanced Understanding:</strong>The AI can provide different perspectives and explanations of concepts, helping students grasp difficult ideas.</li>
-                <li><strong>Improved Self-Learning:</strong>By interacting with the AI, students can learn how to research and problem-solve independently.</li>
-                <li><strong>Reduced Reliance on Traditional Teaching Methods:</strong>The AI can supplement traditional learning methods, offering an additional resource for students.</li>
-            </ul>
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Welcome to TrypoLearn</h1>
+            <p class="lead mb-4">An AI-based learning platform revolutionizing education for students and teachers</p>
+            <div class="d-flex justify-content-center">
+                <a href="#benefits" class="btn btn-light btn-lg me-3">
+                    <i class="fas fa-arrow-down me-2"></i>Learn More
+                </a>
+                <a href="https://trypolearn.com" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-external-link-alt me-2"></i>Visit Website
+                </a>
+            </div>
+        </div>
+    </section>
 
-            <h2>Other ideas</h2>
+    <div class="container">
+        <div class="alert alert-info mt-4" role="alert">
+            <i class="fas fa-info-circle me-2"></i>
+            This is the TrypoLearn AI-based learning platform investment documentation. 
+            You can see the beautiful and modern AI-generated website here: 
+            <a href="https://trypolearn.com" class="alert-link">https://trypolearn.com</a>
+        </div>
+    </div>
 
-            <ul>
-                <li>Students can invite others and learn individually or in the group on the same Documentations (University materials, docs, presentations, notes.)</li>
-                <li>Student can share the cost of the SaaS</li>
-                <li>We are logging the unanswered questions and the smartest students can teach the AI with the answers.</li>
-                <li>The students can ask the AI to develop the exam questions based on the syllabus.</li>
-            </ul>
-
+    <main class="container py-4">
+        <!-- Benefits Section -->
+        <section id="benefits" class="mb-5">
+            <h2 class="section-title">
+                <i class="fas fa-star me-2"></i>Benefits for Students
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card benefit-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-user-graduate text-primary me-2"></i>
+                                Personalized Learning
+                            </h5>
+                            <p class="card-text">The AI can adapt to individual student learning styles and needs, providing tailored content and pace.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card benefit-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-clock text-primary me-2"></i>
+                                24/7 Availability
+                            </h5>
+                            <p class="card-text">Students can access the AI anytime, anywhere, for questions, clarification, or further learning.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card benefit-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                Consistent Information
+                            </h5>
+                            <p class="card-text">The AI will provide accurate information based solely on the university's approved materials, reducing the risk of misinformation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card benefit-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-bolt text-primary me-2"></i>
+                                Efficient Learning
+                            </h5>
+                            <p class="card-text">The AI can quickly process and analyze information, helping students find answers and learn more efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card benefit-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-lightbulb text-primary me-2"></i>
+                                Enhanced Understanding
+                            </h5>
+                            <p class="card-text">The AI can provide different perspectives and explanations of concepts, helping students grasp difficult ideas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card benefit-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-book-reader text-primary me-2"></i>
+                                Improved Self-Learning
+                            </h5>
+                            <p class="card-text">By interacting with the AI, students can learn how to research and problem-solve independently.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card benefit-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-chalkboard-teacher text-primary me-2"></i>
+                                Beyond Traditional Methods
+                            </h5>
+                            <p class="card-text">The AI can supplement traditional learning methods, offering an additional resource for students.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>About</h2>
-            <p>This is a simple project to demonstrate HTML structure.</p>
+
+        <!-- Ideas Section -->
+        <section id="ideas" class="mb-5">
+            <h2 class="section-title">
+                <i class="fas fa-lightbulb me-2"></i>Innovative Ideas
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card idea-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-users text-warning me-2"></i>
+                                Collaborative Learning
+                            </h5>
+                            <p class="card-text">Students can invite others and learn individually or in groups on the same documentation (University materials, docs, presentations, notes).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card idea-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-hand-holding-usd text-warning me-2"></i>
+                                Cost Sharing
+                            </h5>
+                            <p class="card-text">Students can share the cost of the SaaS, making advanced AI learning tools accessible to more people.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card idea-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-robot text-warning me-2"></i>
+                                AI Teaching Improvement
+                            </h5>
+                            <p class="card-text">We are logging the unanswered questions and the smartest students can teach the AI with the answers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card idea-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-tasks text-warning me-2"></i>
+                                Exam Preparation
+                            </h5>
+                            <p class="card-text">The students can ask the AI to develop exam questions based on the syllabus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Documentations</h2>
-            <p>If you have any questions, feel free to reach out!</p>
-            <ul>
-                <li><a href="index.html">index.html</a></li>
-                <li><a href="one-pager">**One Pager**</a></li>
-                <li><a href="ai-in-education-market-size-trends-and-opportuni">AI in Education, Market Size and Trends</a></li>
-                <li><a href="funding-ask-and-use-of-funds">Funding Ask and Use of Funding</a></li>
-                <li><a href="investor-pitch-deck-outline">Investor Pich Deck Putline</a></li>
-                <li><a href="lean-canvas">Lean Canvas</a></li>
-                <li><a href="problem-and-solution-fit">Problem and Solution Fit</a></li>
-                <li><a href="product-and-tech-stack">Product and Tech Stack</a></li>
-                <li><a href="target-users-and-use-cases">Target Users and Use Cases</a></li>
-                <li><a href="team">Team</a></li>
-                <li><a href="traction-and-metrics">Traction and Metrics</a></li>
-                <li><a href="workflow">Workflow ot the MVP </a></li>
-            </ul>
+
+        <!-- About Section -->
+        <section id="about" class="mb-5">
+            <h2 class="section-title">
+                <i class="fas fa-info-circle me-2"></i>About
+            </h2>
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <p class="card-text">This is a simple project to demonstrate HTML structure.</p>
+                    <div class="text-center mt-4">
+                        <img src="pics/trypolearn_mindmap_highres.png" alt="TrypoLearn Mindmap" class="img-fluid rounded mb-3" style="max-height: 300px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documentation Section -->
+        <section id="docs">
+            <h2 class="section-title">
+                <i class="fas fa-file-alt me-2"></i>Documentation
+            </h2>
+            <p class="mb-4">If you have any questions, feel free to reach out!</p>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card doc-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-file-alt text-primary me-2"></i>
+                                Overview
+                            </h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="index.html" class="doc-link">Home Page</a></li>
+                                <li class="list-group-item"><a href="one-pager" class="doc-link">One Pager</a></li>
+                                <li class="list-group-item"><a href="lean-canvas" class="doc-link">Lean Canvas</a></li>
+                                <li class="list-group-item"><a href="problem-and-solution-fit" class="doc-link">Problem and Solution Fit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card doc-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-chart-line text-primary me-2"></i>
+                                Market & Business
+                            </h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="ai-in-education-market-size-trends-and-opportuni" class="doc-link">AI in Education, Market Size and Trends</a></li>
+                                <li class="list-group-item"><a href="funding-ask-and-use-of-funds" class="doc-link">Funding Ask and Use of Funding</a></li>
+                                <li class="list-group-item"><a href="investor-pitch-deck-outline" class="doc-link">Investor Pitch Deck Outline</a></li>
+                                <li class="list-group-item"><a href="traction-and-metrics" class="doc-link">Traction and Metrics</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card doc-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-cogs text-primary me-2"></i>
+                                Product & Team
+                            </h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="product-and-tech-stack" class="doc-link">Product and Tech Stack</a></li>
+                                <li class="list-group-item"><a href="target-users-and-use-cases" class="doc-link">Target Users and Use Cases</a></li>
+                                <li class="list-group-item"><a href="team" class="doc-link">Team</a></li>
+                                <li class="list-group-item"><a href="workflow" class="doc-link">Workflow of the MVP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2025 TrypoLearn</p>
-    </footer>
- 
 
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">TrypoLearn</h5>
+                    <p>Revolutionizing education with AI-powered learning solutions for students and teachers.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Home</a></li>
+                        <li><a href="#benefits" class="text-white">Benefits</a></li>
+                        <li><a href="#ideas" class="text-white">Ideas</a></li>
+                        <li><a href="#docs" class="text-white">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i> info@trypolearn.com</li>
+                        <li><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> San Francisco, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 TrypoLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
