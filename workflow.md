@@ -17,9 +17,17 @@
 15. Students can chat with AI on the Web application or Telegram.
 16. Students can read all text knowledgebase on their smartphone (The application displays the Markdown file on the phone).
 
+## Workflow mindmap
+
 ![Mindmap of the workflow](/pics/trypolearn_mindmap_highres.png)
 
 [Highly detailed mindmap of the workflow](/pics/trypolearn_mindmap_highres.png)
+
+## Visualised workflow
+
+![Visualised workflow](/pics/trypolearn_workflow_highres.png)
+
+[Highly detailed workflow](/pics/trypolearn_workflow_highres.png)
 
 ## Planned Features for the Future
 
