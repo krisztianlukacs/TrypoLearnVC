@@ -24,7 +24,7 @@
 
 An AI assistant trained on your university materials that helps you learn, understand, and prepare for exams—anytime, anywhere.
 
-**“Like Cursor for developers – but for students and teachers.”**
+> “Like Cursor for developers – but for students and teachers.”
 
 ## **4.**
 
