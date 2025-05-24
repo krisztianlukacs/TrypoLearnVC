@@ -4,7 +4,7 @@
 2. The video downloads to the VPS.
 3. Separating the voice channel from the video.
 4. AI writes the transcript (minutes:seconds of the video + Text)
-5. Optional: AI can translate the transcript text.
+5. Optional: AI can translate the transcript text. Write the dictionary with the new words.
 6. AI generates a fully detailed text from the transcript.
 7. AI generates a summary from the full text.
 8. AI generates learning materials from the full text.
